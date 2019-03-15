@@ -69,4 +69,14 @@ feature.properties.id + ");return false;'>Submit Answer</button>";
  // now check the question radio buttons
  var correctAnswer = false;
  var answerSelected = 0;
+ 
+ for (var i=1; i < 5; i++) {
+ if (document.getElementById(questionID+"_"+i).checked){
+ answerSelected = i;
+ }
+ if ((document.getElementById(questionID+"_"+i).checked) && (i ==
+answer)) { 
+8 of 9
+ alert ("Well done");
+ correctAnswer = true;
 }
