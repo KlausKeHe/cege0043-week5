@@ -28,3 +28,11 @@ function loadFormData(formData) {
  
  // load the geoJSON layer
  formLayer = L.geoJson(formJSON,
+ {
+ // use point to layer to create the points
+ pointToLayer: function (feature, latlng)
+ {
+ // in this case, we build an HTML DIV string
+ // using the values in the data
+ var htmlString = "<DIV id='popup'"+ feature.properties.id + "><h2>" +
+feature.properties.name + "</h2><br>";
