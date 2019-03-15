@@ -44,3 +44,7 @@ htmlString = htmlString + "<input type='radio' name='answer' id
 ='"+feature.properties.id+"_2'/>"+feature.properties.language+"<br>";
  htmlString = htmlString + "<input type='radio' name='answer' id
 ='"+feature.properties.id+"_3'/>"+feature.properties.lecturetime+"<br>";
+htmlString = htmlString + "<input type='radio' name='answer' id
+='"+feature.properties.id+"_4'/>"+feature.properties.port_id+"<br>";
+ htmlString = htmlString + "<button onclick='checkAnswer(" +
+feature.properties.id + ");return false;'>Submit Answer</button>";
