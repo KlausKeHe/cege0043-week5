@@ -15,3 +15,7 @@ function startFormDataLoad() {
  loadFormData(formData);
  }
 }
+
+// keep the layer global so that we can automatically pop up a
+// pop-up menu on a point if necessary 7 of 9
+// we can also use this to determine distance for the proximity alert
