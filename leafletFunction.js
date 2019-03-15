@@ -66,4 +66,7 @@ feature.properties.id + ");return false;'>Submit Answer</button>";
  // get the answer from the hidden div
  // NB - do this BEFORE you close the pop-up as when you close the pop-up theDIV is destroyed
  var answer = document.getElementById("answer"+questionID).innerHTML;
+ // now check the question radio buttons
+ var correctAnswer = false;
+ var answerSelected = 0;
 }
