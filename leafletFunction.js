@@ -22,3 +22,6 @@ function startFormDataLoad() {
 
 var formLayer;
 function loadFormData(formData) {
+	
+	// convert the text received from the server to JSON
+ var formJSON = JSON.parse(formData);
