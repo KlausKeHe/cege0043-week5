@@ -57,3 +57,8 @@ feature.properties.id + ");return false;'>Submit Answer</button>";
 " hidden>1</div>";
  htmlString = htmlString + "</div>";
  return L.marker(latlng).bindPopup(htmlString);
+ 
+ },
+ }).addTo(mymap);
+ mymap.fitBounds(formLayer.getBounds());
+}
