@@ -85,4 +85,7 @@ answer)) {
  // they didn't get it right
  alert("Better luck next time");
  }
+ 
+ // now close the popup
+ mymap.closePopup();
 }
