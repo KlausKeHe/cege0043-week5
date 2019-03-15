@@ -6,3 +6,12 @@ function startFormDataLoad() {
  xhrFormData.open("GET", url, true);
  xhrFormData.onreadystatechange = formDataResponse;
  xhrFormData.send();
+ 
+ function formDataResponse(){
+	 
+	 if (xhrFormData.readyState == 4) {
+ // once the data is ready, process the data
+ var formData = xhrFormData.responseText;
+ loadFormData(formData);
+ }
+}
