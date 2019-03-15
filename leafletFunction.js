@@ -79,4 +79,10 @@ answer)) {
 8 of 9
  alert ("Well done");
  correctAnswer = true;
+ }
+ }
+ if (correctAnswer === false) {
+ // they didn't get it right
+ alert("Better luck next time");
+ }
 }
