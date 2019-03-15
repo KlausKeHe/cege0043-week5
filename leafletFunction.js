@@ -52,3 +52,8 @@ feature.properties.id + ");return false;'>Submit Answer</button>";
 // now include a hidden element with the answer
  // in this case the answer is alwasy the first choice
  // for the assignment this will of course vary - you can use feature.properties.correct_answer
+ 
+ htmlString = htmlString + "<div id=answer" + feature.properties.id +
+" hidden>1</div>";
+ htmlString = htmlString + "</div>";
+ return L.marker(latlng).bindPopup(htmlString);
