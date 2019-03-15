@@ -61,4 +61,9 @@ feature.properties.id + ");return false;'>Submit Answer</button>";
  },
  }).addTo(mymap);
  mymap.fitBounds(formLayer.getBounds());
+ 
+ function checkAnswer(questionID) {
+ // get the answer from the hidden div
+ // NB - do this BEFORE you close the pop-up as when you close the pop-up theDIV is destroyed
+ var answer = document.getElementById("answer"+questionID).innerHTML;
 }
